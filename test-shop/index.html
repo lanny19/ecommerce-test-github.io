@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+
+    
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+ 
+      <img class="burg-nav" src="/img/burg-nav.png" alt="" onclick="toggleNav()" id="image-click" alt="Clickable Image">
+      <div class="items-navs">
+        <a href="">home</a>
+        <a href="">services</a>
+        <a href="">about</a>
+        <button id="button-nav" onclick="showContent()">Cards</button>
+        <button id="goback2" onclick="goBack()" >Backs</button> 
+      </div>
+    </nav>
+    <div id="main-page" class="page-main">
+    <div class="main-cont">
+      <div class="card">
+        <h2>Card 1</h2>
+        <p>This is a responsive card.</p>
+      </div>
+      <div class="card">
+        <h2>Card 2</h2>
+        <p>This is a responsive card.</p>
+      </div>
+      <div class="card">
+        <h2>Card 3</h2>
+        <p>This is another card.</p>
+      </div>
+      <div class="card">
+        <h2>Card 4</h2>
+        <p>Yet another card here.</p>
+      </div>
+      <div class="card">
+        <h2>Card 5</h2>
+        <p>Yet another card here.</p>
+      </div>
+      <div class="card">
+        <h2>Card 5</h2>
+        <p>Yet another card here.</p>
+      </div>
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+  <div id="content">
+    <h1>Welcome to the Basket Page!</h1>
+    <div class="grid">
+    <div class="cardn product">
+      <img src="https://placekitten.com/300/201" alt="Product Image">
+      <div class="product-info">
+        <h3>Product Name</h3>
+        <p>Product Description</p>
+      </div>
+      <div class="product-amount">
+        <button class="amount-btn" onclick="updateAmount(-1)">-</button>
+        <span class="amount-display" id="productAmount">1</span>
+        <button class="amount-btn" onclick="updateAmount(1)">+</button>
+      </div>
+      <div class="price" id="totalPrice">$155.00</div>
+    </div>
+    </div>
+  </div>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/card.js"></script>
+</body>
+</html>
